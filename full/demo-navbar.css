@@ -1,0 +1,225 @@
+body {
+    background-color: rgb(216, 216, 216);
+    height: 5000px;
+}
+
+.main {
+    position: relative;
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: firebrick;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.scroll-top i {
+    color: white;
+}
+
+.navbar-container {
+    width: 100%;
+    height: 56px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-list {
+    display: flex;
+}
+
+.navbar-list > li {
+    line-height: 56px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.navbar-list > li > a {
+    padding: 0 10px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar-list li:hover a {
+    background-color: rgb(189, 181, 181);
+    color: black;
+}
+
+.subnav {
+    position: relative;
+}
+
+.sub-menu {
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    display: none;
+}
+
+.sub-menu li {
+    list-style-type: none;
+    line-height: 40px;
+}
+
+.sub-menu li a {
+    display: block;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.sub-menu li:hover a {
+    background-color: white;
+    /* thay màu chữ ok */
+}
+
+.subnav:hover .sub-menu {
+    display: block;
+}
+
+.reduce-navbar {
+    color: white;
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+/* NAVBAR ON MOBILE  */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(167, 165, 163, 0.3);
+    display: none;
+}
+
+.navbar-mobile {
+    width: 350px;
+    height: 100%;
+    background-color: rgb(216, 216, 216);
+    position: relative;
+}
+
+.navbar-mobile-close-icon {
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 7px;
+    cursor: pointer;
+}
+
+.navbar-mobile-close-icon:hover {
+    opacity: 0.6;
+}
+
+.icon-nav {
+    margin-right: 10px;
+}
+
+.navbar-mobile-list {
+    padding-left: 30px;
+}
+
+.navbar-mobile-list > li:first-child {
+    padding-top: 57px;
+}
+
+.navbar-mobile-list > li {
+    padding-top: 30px; 
+    list-style-type: none ; 
+}
+
+.navbar-mobile-list > li > a {
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;  
+}
+
+.navbar-mobile-list > li:hover > a {
+   background-color: rgb(189, 181, 181);
+   border-bottom-left-radius: 5px;
+   border-top-left-radius: 5px ;
+}
+
+.sub-menu-mobile {
+    display: none;
+}
+
+.sub-menu-mobile li {
+    list-style-type: none;
+    line-height: 40px;
+    padding-left: 40px;
+}
+
+.sub-menu-mobile li a {
+    margin-top: 5px;
+    padding: 3px;
+    color: black;
+    font-size: 16px;
+    text-decoration: none ;
+    display: block;
+}
+
+.sub-menu-mobile li:hover a {
+    background-color: rgb(189, 181, 181);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px ;
+}
+
+.subnav-mobile:hover .sub-menu-mobile {
+    display: block;
+}
+
+/* do dùng class show thì add trong js thuộc tính none trong overlay khong bị ghi đè */
+/* nên khi có class "overlay show" thì mới hiển thị */
+.overlay.show {
+    display: block;
+}
+
+.navbar-mobile-show {
+    animation: navmobile_show 0.5s linear;
+}
+@keyframes navmobile_show {
+    from {
+        transform: translateX(-100%);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.navbar-mobile-hide {
+    animation: navmobile_hide .5s linear;
+}
+@keyframes navmobile_hide {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+  

@@ -1,0 +1,184 @@
+.all-content {
+    margin-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.header {
+    position: relative;
+}
+
+.arrow-icon {
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.arrow-icon:hover {
+    color: rgb(118, 117, 117);
+}
+
+.arrow-icon-left {
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
+}
+
+.arrow-icon-right {
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%);
+}
+
+/*  SLIDER DOTS : DẤU CÁC TRANG SCROLL */
+
+.slider-dots {
+    position: absolute;
+    top: 105%;
+    left: 20px;
+}
+
+.slider-dots li {
+    display: inline-block;
+    width: 25px;
+    height: 10px;
+    font-size: 40px;
+    list-style: none;
+    background-color: black;
+    border-radius: 10px;
+    margin: 0 2px;
+    cursor: pointer;
+    transition: width .25s linear;
+    transform: translateX(-10px);
+}   
+
+/* dùng trong js */
+.slider-dots li.active-position {
+    width: 40px;
+    transition: width 0.25s ease-in-out;
+}
+
+.slider-dots li:hover {
+    opacity: 0.7;
+}
+
+.slider-dots li button {
+    display: none;
+}
+
+
+
+/* ///////////////// */
+
+/* phải có lớp bao bên ngoài cả div chứa các 
+item và cho cái div đấy chạy trong cái bao  */
+.slider-wrapper {
+    overflow: hidden;  /* quan trọng đặc biệt  */ 
+    position: relative;
+}
+
+.header-content-container {
+    width: 14200px;
+    position: relative;
+    display: flex;
+    transition: transform 0.5s linear;
+}
+
+.header-content {
+    width: 1420px;
+    height: 270px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+   /*  flex: 1 0; flex basis 100% để nó luôn to full */ 
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.header-content.show {
+    display: flex;
+}
+.header-content.hide {
+    display: none;
+}
+
+.header-content-container .header-content:first-child {
+    background-image: linear-gradient(to right, rgb(0, 126, 254), rgb(6, 195, 254));
+    /* display: none; */
+}
+
+.header-content-container .header-content:nth-child(2){
+    background-image: linear-gradient(to right, rgb(86, 63, 63), rgb(246, 243, 241));
+    /* display: none; */
+}
+
+.header-content-container .header-content:nth-child(3) {
+    background-image: linear-gradient(to right, rgb(178, 166, 166), rgb(69, 188, 201));
+    /* display: none; */
+}
+
+.header-content-container .header-content:nth-child(4) {
+    background-image: linear-gradient(to right, rgb(218, 170, 48), rgb(34, 22, 59));
+    /* display: none; */
+}
+
+.header-content-container .header-content:nth-child(5) {
+    background-image: linear-gradient(to right, rgb(195, 87, 87), rgb(68, 127, 134));
+    /* display: none; */
+}
+
+
+/* //////////////// */
+.header-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-left {
+    padding: 0 36px 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.header-left-heading {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.header-content-desc {
+    color: white;
+    margin-bottom: 24px;
+    font-size: 18px;
+    max-width: 600px;
+}
+
+.header-content-share a {
+    padding: 4px 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.header-content-share a:hover {
+    background-color: white;
+    color: rgb(0, 126, 254);
+}
+
+.header-right {
+
+}
+
+.header-right img {
+    width: 600px;
+    height: 270px;
+    display: inline-block;
+}

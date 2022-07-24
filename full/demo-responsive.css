@@ -1,0 +1,106 @@
+@media (min-width : 1024px) {
+    .reduce-navbar {
+        display: none;
+    }
+}
+
+@media (min-width : 740px) and (max-width : 1023px) {
+    .navbar-list {
+        display: none;
+    }
+
+    .w25_p12 {
+        width: 50%;
+    } 
+
+/* HEADER */
+
+    .slider-wrapper {
+        width: 100%;
+    }
+
+    .header-content-desc {
+        max-width: 600px;
+    }
+
+    .header-right img {
+        display: none;
+    }
+
+ /* COURSE */
+    .content-wrapper-lists {
+        padding: 0;
+    }
+
+    .content-wrapper-course-lists {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        overflow-y: auto;
+    }
+
+    .content-wrapper-course-lists section {
+        width: 100%; 
+        /* Phải lớn hơn course-item :))) */
+    }
+
+    .content-course-item {
+        width: 33.5vw;
+    }  
+}
+
+@media (min-width : 0) and (max-width : 766px) {
+
+    .all-content {
+        padding: 0 16px;
+    }
+
+    .navbar-list {
+        display: none;
+    }
+
+    .w25_p12 {
+        width: 100%;
+    } 
+
+/* HEADER */
+
+    /* .header-content {
+        width: 100%;
+    } */
+
+    .slider-wrapper {
+        width: 100%;
+    }
+    .header-content-desc {
+        max-width: 300px;
+    }
+
+    .header-right img {
+        display: none;
+    }
+
+/* ITEM */
+    .item-img {
+        min-height: 200px ;
+    }
+
+ /* COURSE */
+    .content-wrapper-lists {
+        padding: 0;
+    }
+
+    .content-wrapper-course-lists {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        overflow-y: auto;
+    }
+
+    .content-wrapper-course-lists section {
+        width: 100%; 
+        /* Phải lớn hơn course-item :))) */
+    }
+
+    .content-course-item {
+        width: 60.5vw;
+    }
+}

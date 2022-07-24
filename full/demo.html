@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="demo-content.css">
+    <link rel="stylesheet" href="demo-navbar.css">
+    <link rel="stylesheet" href="demo-header.css">
+    <link rel="stylesheet" href="demo-responsive.css">
+    <script src="https://kit.fontawesome.com/3145599b00.js" crossorigin="anonymous"></script>
+    <title>Demo</title>
+</head>
+<body>
+    <div class="main">
+    <!-- HEADER -->
+        <div class="navbar-container">
+            <ul class="navbar-list">
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-house"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-road"></i>
+                        Lộ trình
+                    </a>
+                </li>
+                <li class="subnav">
+                    <a href="">
+                        <i class="fa-solid fa-book"></i>
+                        Khóa học
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="">JavaScript</a>
+                        </li>
+                        <li>
+                            <a href="">PHP</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-ghost"></i>
+                        Mạnh
+                    </a>       
+                </li>
+            </ul>
+            <div class="reduce-navbar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        <!-- MOBILE -->
+            <div class="overlay"> <!-- lớp phủ toàn trang khi click dạng mobile -->
+                <div class="navbar-mobile">
+                    <span class="navbar-mobile-close-icon">
+                        <i class="fa-solid fa-x"></i>
+                    </span>
+                    <ul class="navbar-mobile-list">
+                        <li>
+                            <a href="">
+                                <i class="fa-solid fa-house icon-nav"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-solid fa-road icon-nav"></i>
+                                Lộ trình
+                            </a>
+                        </li>
+                        <li class="subnav-mobile">
+                            <a href="">
+                                <i class="fa-solid fa-book icon-nav"></i>
+                                Khóa học
+                                <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                            <ul class="sub-menu-mobile">
+                                <li>
+                                    <a href="">JavaScript</a>
+                                </li>
+                                <li>
+                                    <a href="">PHP</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-solid fa-ghost icon-nav"></i>
+                                Mạnh
+                            </a>       
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    <!-- CONTENT -->
+        <div class="all-content" id="main">
+            <div class="header">
+                <div class="arrow-icon arrow-icon-left "><i class="fa-solid fa-chevron-left"></i></div>
+                <div class="arrow-icon arrow-icon-right"><i class="fa-solid fa-chevron-right"></i></div>
+                <ul class="slider-dots">
+                    <li data-index="0" class="active-position"></li>
+                    <li data-index="1"></li>
+                    <li data-index="2"></li>  
+                    <li data-index="3"></li>
+                    <li data-index="4"></li>    
+                </ul>
+                <div class="slider-wrapper">
+                    <div class="header-content-container">
+                        <div class="header-content">
+                            <div class="header-left">
+                                <h2 class="header-left-heading">
+                                    <a href="https://www.youtube.com/watch?v=rus6LzdX8Ts" target="_blank">
+                                        F8 trên Facebook 0
+                                    </a>
+                                </h2>
+                                <p class="header-content-desc">
+                                    F8 được nhắc đến mọi nơi, nơi nào có lập trình nơi đó có F8
+                                    F8 được nhắc đến mọi nơi, nơi nào có lập trình nơi đó có F8
+                                </p>
+                                <div class="header-content-share">
+                                    <a href="https://www.youtube.com/channel/UCNSCWwgW-rwmoE3Yc4WmJhw">
+                                        Truy cập nhóm
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header-right">
+                                <a href="">
+                                    <img src="Banner_04_2.png" alt="F8" title="F8">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-content">
+                            <div class="header-left">
+                                <h2 class="header-left-heading">
+                                    <a href="https://www.youtube.com/watch?v=rus6LzdX8Ts" target="_blank">
+                                        F8 trên Facebook 1
+                                    </a>
+                                </h2>
+                                <p class="header-content-desc">
+                                    F8 được nhắc đến mọi nơi, nơi nào có lập trình nơi đó có F8
+                                    F8 được nhắc đến mọi nơi, nơi nào có lập trình nơi đó có F8
+                                </p>
+                                <div class="header-content-share">
+                                    <a href="https://www.youtube.com/channel/UCNSCWwgW-rwmoE3Yc4WmJhw">
+                                        Truy cập nhóm
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header-right">
+                                <a href="">
+                                    <img src="Ferrari-F8.jpg" alt="F8" title="F8">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-content">
+                            <div class="header-left">
+                                <h2 class="header-left-heading">
+                                    <a href="https://www.youtube.com/watch?v=rus6LzdX8Ts" target="_blank">
+                                        F8 trên Facebook 2
+                                    </a>
+                                </h2>
+                                <p class="header-content-desc">
+                                    F8 được nhắc đến mọi nơi, nơi nào có lập trình nơi đó có F8
+                                    F8 được nhắc đến mọi nơi, nơi nào có lập trình nơi đó có F8
+                                </p>
+                                <div class="header-content-share">
+                                    <a href="https://www.youtube.com/channel/UCNSCWwgW-rwmoE3Yc4WmJhw">
+                                        Truy cập nhóm
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header-right">
+                                <a href="">
+                                    <img src="Banner_04_2.png" alt="F8" title="F8">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-content">
+                            <div class="header-left">
+                                <h2 class="header-left-heading">
+                                    <a href="https://www.youtube.com/watch?v=rus6LzdX8Ts" target="_blank">
+                                        F8 trên Facebook 3
+                                    </a>
+                                </h2>
+                                <p class="header-content-desc">
+                                    F8 được nhắc đến mọi nơi, nơi nào có lập trình nơi đó có F8
+                                    F8 được nhắc đến mọi nơi, nơi nào có lập trình nơi đó có F8
+                                </p>
+                                <div class="header-content-share">
+                                    <a href="https://www.youtube.com/channel/UCNSCWwgW-rwmoE3Yc4WmJhw">
+                                        Truy cập nhóm
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header-right">
+                                <a href="">
+                                    <img src="Ferrari-F8.jpg" alt="F8" title="F8">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-content">
+                            <div class="header-left">
+                                <h2 class="header-left-heading">
+                                    <a href="https://www.youtube.com/watch?v=rus6LzdX8Ts" target="_blank">
+                                        F8 trên Facebook 4
+                                    </a>
+                                </h2>
+                                <p class="header-content-desc">
+                                    F8 được nhắc đến mọi nơi, nơi nào có lập trình nơi đó có F8
+                                    F8 được nhắc đến mọi nơi, nơi nào có lập trình nơi đó có F8
+                                </p>
+                                <div class="header-content-share">
+                                    <a href="https://www.youtube.com/channel/UCNSCWwgW-rwmoE3Yc4WmJhw">
+                                        Truy cập nhóm
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header-right">
+                                <a href="">
+                                    <img src="Banner_04_2.png" alt="F8" title="F8">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div class="content">
+                <div class="content-wrapper-lists">
+                    <div class="content-wrapper1">
+                        <section class="w25_p12">
+                            <div class="item">
+                                <div class="item-img">
+                                    <div class="item-img-real">
+                        
+                                    </div>
+                                </div>
+                               
+                                <ul class="item-share">
+                                    <li>
+                                        <a href="https://www.facebook.com/khocs.tham.1/">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://translate.google.com.vn/">
+                                            <i class="fa-solid fa-earth-asia"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                
+                                <div class="item-container">
+                                    <div class="item-content-lists p17">
+                                        <div class="item-content">
+                                            <div class="item-content-top">
+                                                <a href="#" class="cl_black">
+                                                    &#174;
+                                                    <span> Facebook</span>  
+                                                </a>            
+                                            </div>
+                                            <span class="item-content-des">1 years ago</span>
+                                        </div>
+                                        <h2 class="content-des gradient-effect">
+                                            <a href="" class="cl_black">
+                                                Cấu trúc JavaScript
+                                            </a>
+                                        </h2>
+                                        
+                                    </div>
+                                    <div class="item-footer p17">
+                                        <div class="author-list">
+                                            <a href="#" class="author author-tooltip cl_aqua">
+                                                <img src="task.png" alt="" class="img-author">
+                                                <span>Phạm Ngọc Thơ</span>
+                                                <span class="author-name-tooltip">Phạm Ngọc Thơ</span>
+                                            </a>
+                                            <span class="item-footer-des">5 MIN READ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="w25_p12">
+                            <div class="item">
+                                <div class="item-img">
+                                    <div class="item-img-real">
+                        
+                                    </div>
+                                </div>
+                               
+                                <ul class="item-share">
+                                    <li>
+                                        <a href="https://www.facebook.com/khocs.tham.1/">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://translate.google.com.vn/">
+                                            <i class="fa-solid fa-earth-asia"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                
+                                <div class="item-container">
+                                    <div class="item-content-lists p17">
+                                        <div class="item-content">
+                                            <div class="item-content-top">
+                                                <a href="#" class="cl_black">
+                                                    &#174;
+                                                    <span> Facebook</span>  
+                                                </a>            
+                                            </div>
+                                            <span class="item-content-des">1 years ago</span>
+                                        </div>
+                                        <h2 class="content-des gradient-effect">
+                                            <a href="" class="cl_black">
+                                                Cách các nhà phát triển web có thể tối ưu hóa cho các quan trọng web cốt lõi của Google
+                                            </a>
+                                        </h2>
+                                        
+                                    </div>
+                                    <div class="item-footer p17">
+                                        <div class="author-list">
+                                            <a href="#" class="author author-tooltip cl_aqua">
+                                                <img src="task.png" alt="" class="img-author">
+                                                <span>Phạm Ngọc Thơ</span>
+                                                <span class="author-name-tooltip">Phạm Ngọc Thơ</span>
+                                            </a>
+                                            <span class="item-footer-des">5 MIN READ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="w25_p12">
+                            <div class="item">
+                                <div class="item-img">
+                                    <div class="item-img-real">
+                        
+                                    </div>
+                                </div>
+                               
+                                <ul class="item-share">
+                                    <li>
+                                        <a href="https://www.facebook.com/khocs.tham.1/">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://translate.google.com.vn/">
+                                            <i class="fa-solid fa-earth-asia"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                
+                                <div class="item-container">
+                                    <div class="item-content-lists p17">
+                                        <div class="item-content">
+                                            <div class="item-content-top">
+                                                <a href="#" class="cl_black">
+                                                    &#174;
+                                                    <span> Facebook</span>  
+                                                </a>            
+                                            </div>
+                                            <span class="item-content-des">1 years ago</span>
+                                        </div>
+                                        <h2 class="content-des gradient-effect">
+                                            <a href="" class="cl_black">
+                                                Cách các nhà phát triển web có thể tối ưu hóa cho các quan trọng web cốt lõi của Google
+                                            </a>
+                                        </h2>
+                                        
+                                    </div>
+                                    <div class="item-footer p17">
+                                        <div class="author-list">
+                                            <a href="#" class="author author-tooltip cl_aqua">
+                                                <img src="task.png" alt="" class="img-author">
+                                                <span>Phạm Ngọc Thơ</span>
+                                                <span class="author-name-tooltip">Phạm Ngọc Thơ</span>
+                                            </a>
+                                            <span class="item-footer-des">5 MIN READ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="w25_p12">
+                            <div class="item">
+                                <div class="item-img">
+                                    <div class="item-img-real">
+                        
+                                    </div>
+                                </div>
+                               
+                                <ul class="item-share">
+                                    <li>
+                                        <a href="https://www.facebook.com/khocs.tham.1/">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://translate.google.com.vn/">
+                                            <i class="fa-solid fa-earth-asia"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                
+                                <div class="item-container">
+                                    <div class="item-content-lists p17">
+                                        <div class="item-content">
+                                            <div class="item-content-top">
+                                                <a href="#" class="cl_black">
+                                                    &#174;
+                                                    <span> Facebook</span>  
+                                                </a>            
+                                            </div>
+                                            <span class="item-content-des">1 years ago</span>
+                                        </div>
+                                        <h2 class="content-des gradient-effect">
+                                            <a href="" class="cl_black">
+                                                Cách các nhà phát triển web có thể tối ưu hóa cho các quan trọng web cốt lõi của Google
+                                            </a>
+                                        </h2>
+                                        
+                                    </div>
+                                    <div class="item-footer p17">
+                                        <div class="author-list">
+                                            <a href="#" class="author author-tooltip cl_aqua">
+                                                <img src="task.png" alt="" class="img-author">
+                                                <span>Phạm Ngọc Thơ</span>
+                                                <span class="author-name-tooltip">Phạm Ngọc Thơ</span>
+                                            </a>
+                                            <span class="item-footer-des">5 MIN READ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="content-wrapper2">
+                        <div class="content-wrapper-heading">
+                            <p class="content-wrapper-sub-heading" >
+                                <b>216.075+</b> người khác đã học
+                            </p>
+                            <div class="content-course-name">
+                                <h2>
+                                    <a href="https://fullstack.edu.vn/learning-paths/front-end-development">
+                                        Lộ trình học Front-end
+                                    </a>
+                                    <span class="course-label">MỚI</span>
+                                </h2>
+                                <a href="https://fullstack.edu.vn/learning-paths/front-end-development">
+                                    Xem chi tiết
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content-wrapper-course-lists">
+                            <section class="w25_p12">
+                                <div class="content-course-item">
+                                    <a href="#">
+                                        <div class="course-overlay">
+                                            <button class="course-btn">Xem khóa học</button>
+                                        </div>
+                                    </a>          
+                                    <h3 class="course-title">
+                                        Kiến Thức Nhập Môn IT
+                                    </h3>
+                                    <div class="course-desc">
+                                        <i class="fa-solid fa-users"></i>
+                                        <span>100000</span>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="w25_p12">
+                                <div class="content-course-item">
+                                    <a href="#">
+                                        <div class="course-overlay">
+                                            <button class="course-btn">Xem khóa học</button>
+                                        </div>
+                                    </a> 
+                                    <h3 class="course-title">
+                                        Kiến Thức Nhập Môn IT
+                                    </h3>
+                                    <div class="course-desc">
+                                        <i class="fa-solid fa-users"></i>
+                                        <span>100000</span>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="w25_p12">
+                                <div class="content-course-item">
+                                    <a href="#">
+                                        <div class="course-overlay">
+                                            <button class="course-btn">Xem khóa học</button>
+                                        </div>
+                                    </a> 
+                                    <h3 class="course-title">
+                                        Kiến Thức Nhập Môn IT
+                                    </h3>
+                                    <div class="course-desc">
+                                        <i class="fa-solid fa-users"></i>
+                                        <span>100000</span>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="w25_p12">
+                                <div class="content-course-item">
+                                    <a href="#">
+                                        <div class="course-overlay">
+                                            <button class="course-btn">Xem khóa học</button>
+                                        </div>
+                                    </a> 
+                                    <h3 class="course-title">
+                                        Kiến Thức Nhập Môn IT
+                                    </h3>
+                                    <div class="course-desc">
+                                        <i class="fa-solid fa-users"></i>
+                                        <span>100000</span>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="w25_p12">
+                                <div class="content-course-item">
+                                    <a href="#">
+                                        <div class="course-overlay">
+                                            <button class="course-btn">Xem khóa học</button>
+                                        </div>
+                                    </a> 
+                                    <h3 class="course-title">
+                                        Kiến Thức Nhập Môn IT
+                                    </h3>
+                                    <div class="course-desc">
+                                        <i class="fa-solid fa-users"></i>
+                                        <span>100000</span>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="w25_p12">
+                                <div class="content-course-item">
+                                    <a href="#">
+                                        <div class="course-overlay">
+                                            <button class="course-btn">Xem khóa học</button>
+                                        </div>
+                                    </a>          
+                                    <h3 class="course-title">
+                                        Kiến Thức Nhập Môn IT
+                                    </h3>
+                                    <div class="course-desc">
+                                        <i class="fa-solid fa-users"></i>
+                                        <span>100000</span>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="content-wrapper3">
+                        <div class="content-wrapper-heading">
+                            <p class="content-wrapper-sub-heading" >
+                                <b>216.075+</b> người khác đã học
+                            </p>
+                            <div class="content-course-name">
+                                <h2>
+                                    <a href="https://fullstack.edu.vn/learning-paths/front-end-development">
+                                        Lộ trình học Back-end
+                                    </a>
+                                    <span class="course-label">MỚI</span>
+                                </h2>
+                                <a href="https://fullstack.edu.vn/learning-paths/front-end-development">
+                                    Xem chi tiết
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content-wrapper-course-lists">
+                            <section class="w25_p12">
+                                <div class="content-course-item">
+                                    <a href="#">
+                                        <div class="course-overlay">
+                                            <button class="course-btn">Xem khóa học</button>
+                                        </div>
+                                    </a>          
+                                    <h3 class="course-title">
+                                        Kiến Thức Nhập Môn IT
+                                    </h3>
+                                    <div class="course-desc">
+                                        <i class="fa-solid fa-users"></i>
+                                        <span>100000</span>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="w25_p12">
+                                <div class="content-course-item">
+                                    <a href="#">
+                                        <div class="course-overlay">
+                                            <button class="course-btn">Xem khóa học</button>
+                                        </div>
+                                    </a> 
+                                    <h3 class="course-title">
+                                        Kiến Thức Nhập Môn IT
+                                    </h3>
+                                    <div class="course-desc">
+                                        <i class="fa-solid fa-users"></i>
+                                        <span>100000</span>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="w25_p12">
+                                <div class="content-course-item">
+                                    <a href="#">
+                                        <div class="course-overlay">
+                                            <button class="course-btn">Xem khóa học</button>
+                                        </div>
+                                    </a> 
+                                    <h3 class="course-title">
+                                        Kiến Thức Nhập Môn IT
+                                    </h3>
+                                    <div class="course-desc">
+                                        <i class="fa-solid fa-users"></i>
+                                        <span>100000</span>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="w25_p12">
+                                <div class="content-course-item">
+                                    <a href="#">
+                                        <div class="course-overlay">
+                                            <button class="course-btn">Xem khóa học</button>
+                                        </div>
+                                    </a> 
+                                    <h3 class="course-title">
+                                        Kiến Thức Nhập Môn IT
+                                    </h3>
+                                    <div class="course-desc">
+                                        <i class="fa-solid fa-users"></i>
+                                        <span>100000</span>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="w25_p12">
+                                <div class="content-course-item">
+                                    <a href="#">
+                                        <div class="course-overlay">
+                                            <button class="course-btn">Xem khóa học</button>
+                                        </div>
+                                    </a> 
+                                    <h3 class="course-title">
+                                        Kiến Thức Nhập Môn IT
+                                    </h3>
+                                    <div class="course-desc">
+                                        <i class="fa-solid fa-users"></i>
+                                        <span>100000</span>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="w25_p12">
+                                <div class="content-course-item">
+                                    <a href="#">
+                                        <div class="course-overlay">
+                                            <button class="course-btn">Xem khóa học</button>
+                                        </div>
+                                    </a>          
+                                    <h3 class="course-title">
+                                        Kiến Thức Nhập Môn IT
+                                    </h3>
+                                    <div class="course-desc">
+                                        <i class="fa-solid fa-users"></i>
+                                        <span>100000</span>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-top">
+            <a href="#main">
+                <i class="fa-solid fa-arrow-up-long"></i>
+            </a>
+        </div>
+    </div>
+    <script src="demo.js"></script>
+</body>
+</html>
